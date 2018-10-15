@@ -1,6 +1,8 @@
 I use PostgreSQL DB.
 To use this app you need create database with name "TestREST" and table "loans".
 
+Also use Tomcat as a web server. So relative path to file is defined in the directories of this web server.
+
 Query for creation table.
 
 CREATE TABLE public.loans
