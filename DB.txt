@@ -1,0 +1,44 @@
+I use PostgreSQL DB.
+To use this app you need create database with name "TestREST" and table "loans".
+
+Query for creation table.
+
+CREATE TABLE public.loans
+(
+  id numeric NOT NULL,
+  status character varying,
+  amount numeric,
+  "applicationSignedHour" numeric,
+  "applicationSignedWeekday" numeric,
+  city character varying,
+  country character varying,
+  "creditScoreEsEquifaxRisk" character varying,
+  "dateOfBirth" character varying,
+  "debtToIncome" numeric,
+  education numeric,
+  "employmentDurationCurrentEmployer" character varying,
+  "employmentPosition" character varying,
+  "employmentStatus" numeric,
+  "existingLiabilities" numeric,
+  gender numeric,
+  "homeOwnershipType" numeric,
+  "incomeFromPrincipalEmployer" numeric,
+  "incomeTotal" numeric,
+  interest_rate numeric,
+  "loanDate" character varying,
+  "loanDuration" numeric,
+  "maritalStatus" numeric,
+  "newCreditCustomer" boolean,
+  "noOfPreviousLoansBeforeLoan" numeric,
+  "occupationArea" numeric,
+  "useOfLoan" numeric,
+  "verificationType" numeric,
+  "workExperience" character varying,
+  "previousScore" numeric,
+  defaulted boolean,
+  "defaultDate" character varying,
+  CONSTRAINT id PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
